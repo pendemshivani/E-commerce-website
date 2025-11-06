@@ -65,11 +65,12 @@ Follow these steps to run the project locally 👇
 
 ---
 
-### 🪄 Step 1 — Clone the Repository  
+## 🪄 Step 1 — Clone the Repository  
 ```bash
 git clone https://github.com/pendemshivani/E-commerce-website.git
 cd E-commerce-website
-⚙️ Step 2 — Backend Setup
+---
+## ⚙️ Step 2 — Backend Setup
 # Navigate to backend folder
 cd backend
 
@@ -90,7 +91,8 @@ npm run dev
 
 
 🟢 The backend will run at http://localhost:5000
-**### Step 3**
+---
+## Step 3
 # Open a new terminal and navigate to the frontend folder
 cd ../frontend
 
