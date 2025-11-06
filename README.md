@@ -70,7 +70,10 @@ Follow these steps to run the project locally 👇
 ```bash
 git clone https://github.com/pendemshivani/E-commerce-website.git
 cd E-commerce-website
-⚙️ Step 2 — Backend Setup
+
+##⚙️ Step 2 — Backend Setup
+
+```bash
 1️⃣ Navigate to backend folder
 
 cd backend
