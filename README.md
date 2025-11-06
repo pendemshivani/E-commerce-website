@@ -7,7 +7,7 @@
 **E-Commerce Website** is a full-stack shopping cart web application built using the **MERN stack (MongoDB, Express, React, Node.js)**.  
 It simulates an online shopping platform where users can browse products, add them to a cart, manage quantities, and complete a mock checkout.  
 
-The project emphasizes realistic e-commerce workflows, a modern responsive UI, MongoDB persistence, and mock user sessions — all without requiring authentication.
+The project demonstrates realistic e-commerce workflows, a modern responsive UI, MongoDB persistence, and mock user sessions — all without requiring authentication.
 
 ---
 
@@ -66,38 +66,36 @@ Follow these steps to run the project locally 👇
 ---
 
 ## 🪄 Step 1 — Clone the Repository  
+
 ```bash
 git clone https://github.com/pendemshivani/E-commerce-website.git
 cd E-commerce-website
----
-## ⚙️ Step 2 — Backend Setup
-# Navigate to backend folder
+⚙️ Step 2 — Backend Setup
+1️⃣ Navigate to backend folder
+
 cd backend
-
-# Install backend dependencies
+2️⃣ Install backend dependencies
 npm install
-Create a .env file inside the backend folder and add:
 
+3️⃣ Create a .env file inside the backend folder and add the following:
 MONGO_URI=mongodb://localhost:27017/mock_cart
 PORT=5000
 
-Then:
-
-# Seed the database with mock products
+4️⃣ Seed the database with mock products
 node seed/seed.js
 
-# Start the backend server
+5️⃣ Start the backend server
 npm run dev
+🟢 Backend will run at: http://localhost:5000
 
+💻 Step 3 — Frontend Setup
 
-🟢 The backend will run at http://localhost:5000
----
-## Step 3
-# Open a new terminal and navigate to the frontend folder
+1️⃣ Open a new terminal and navigate to the frontend folder
 cd ../frontend
 
-# Install frontend dependencies
+2️⃣ Install frontend dependencies
 npm install
 
-# Start the React development server
+3️⃣ Start the React development server
 npm start
+🟢 Frontend will run at: http://localhost:3000
