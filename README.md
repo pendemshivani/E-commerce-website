@@ -69,7 +69,8 @@ Follow these steps to run the project locally 👇
 ```bash
 git clone https://github.com/pendemshivani/E-commerce-website.git
 cd E-commerce-website
-
+**
+### Step 2**
 # Navigate to backend folder
 cd backend
 
@@ -85,7 +86,7 @@ node seed/seed.js
 
 # Start the backend server
 npm run dev
-
+**### Step 3**
 # Open a new terminal and navigate to the frontend folder
 cd ../frontend
 
