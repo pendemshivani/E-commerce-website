@@ -136,3 +136,8 @@ npm start
 
 ✅ **Frontend will run at:** [http://localhost:3000](http://localhost:3000)
 
+## 🖼️ Project Preview
+
+Here’s how the project looks 👇  
+
+![Project Screenshot](frontend/public/preview.png)
