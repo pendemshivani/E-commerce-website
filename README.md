@@ -1,13 +1,13 @@
-# 🛍️ E-Commerce Website
+# 🛍️ E-Commerce Website  
 
 ---
 
 ## 🚀 Overview  
 
-**Mock E-Commerce Cart** is a full-stack shopping cart web application built using the **MERN stack (MongoDB, Express, React, Node.js)**.  
+**E-Commerce Website** is a full-stack shopping cart web application built using the **MERN stack (MongoDB, Express, React, Node.js)**.  
 It simulates an online shopping platform where users can browse products, add them to a cart, manage quantities, and complete a mock checkout.  
 
-The project emphasizes realistic e-commerce workflows, modern responsive UI, database integration, and mock user persistence — all without requiring authentication.
+The project emphasizes realistic e-commerce workflows, a modern responsive UI, MongoDB persistence, and mock user sessions — all without requiring authentication.
 
 ---
 
@@ -28,10 +28,10 @@ The project emphasizes realistic e-commerce workflows, modern responsive UI, dat
 ### 💼 Core Features  
 - 🛍️ **Product Grid:** Displays all available products with image, price, and description.  
 - ➕ **Cart Management:** Add, remove, and update product quantities.  
-- 💵 **Dynamic Total Calculation:** Automatically updates the total price when items change.  
+- 💵 **Dynamic Total Calculation:** Automatically updates the total when items change.  
 - 💳 **Mock Checkout:** Generates a receipt with total and timestamp.  
 - 🌙 **Dark/Light Mode:** Switch between light and dark themes dynamically.  
-- 📱 **Responsive UI:** Clean and responsive layout for both desktop and mobile devices.  
+- 📱 **Responsive UI:** Works seamlessly across desktop, tablet, and mobile devices.  
 
 ---
 
@@ -39,10 +39,10 @@ The project emphasizes realistic e-commerce workflows, modern responsive UI, dat
 
 | Feature | Description |
 |----------|--------------|
-| 🧍 **Mock User Persistence** | Each user (Demo User, User A, User B, etc.) has their own cart stored separately in MongoDB using a mock `userId`. |
-| ⚙️ **Error Handling** | Comprehensive backend try/catch blocks and user-friendly frontend error messages. |
-| 🌍 **Fake Store API Integration** | Fetches products from the [Fake Store API](https://fakestoreapi.com) and merges them with locally seeded data for variety. |
-| 💾 **Database Persistence** | All product and cart data is stored and retrieved from MongoDB for permanent storage. |
+| 🧍 **Mock User Persistence** | Each user (Demo User, User A, etc.) has their own cart stored separately in MongoDB using a mock `userId`. |
+| ⚙️ **Error Handling** | Comprehensive backend error handling with proper responses. |
+| 🌍 **Fake Store API Integration** | Fetches products from [Fake Store API](https://fakestoreapi.com) and merges with local data. |
+| 💾 **Database Persistence** | All data is stored and retrieved from MongoDB for consistency. |
 
 ---
 
@@ -61,7 +61,36 @@ The project emphasizes realistic e-commerce workflows, modern responsive UI, dat
 
 ## 🧰 Setup Instructions  
 
+Follow these steps to run the project locally 👇  
+
+---
+
 ### 🪄 Step 1 — Clone the Repository  
 ```bash
-git clone https://github.com/pendemshivani/E-commerce-website
+git clone https://github.com/pendemshivani/E-commerce-website.git
+cd E-commerce-website
 
+# Navigate to backend folder
+cd backend
+
+# Install backend dependencies
+npm install
+
+# Create a .env file inside the backend folder and add the following variables:
+MONGO_URI=mongodb://localhost:27017/mock_cart
+PORT=5000
+
+# Seed the database with mock products
+node seed/seed.js
+
+# Start the backend server
+npm run dev
+
+# Open a new terminal and navigate to the frontend folder
+cd ../frontend
+
+# Install frontend dependencies
+npm install
+
+# Start the React development server
+npm start
