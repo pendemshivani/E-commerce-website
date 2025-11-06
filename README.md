@@ -64,41 +64,75 @@ The project demonstrates realistic e-commerce workflows, a modern responsive UI,
 Follow these steps to run the project locally 👇  
 
 ---
+Sure! Here’s your entire setup guide properly formatted as **Markdown code**, ready to paste into a `README.md` file 👇
 
-## 🪄 Step 1 — Clone the Repository  
+---
+
+````markdown
+# 🛒 E-Commerce Website Setup Guide
+
+Follow the steps below to set up and run the project locally.
+
+---
+
+## ⚙️ Step 1 — Clone the Repository
 
 ```bash
 git clone https://github.com/pendemshivani/E-commerce-website.git
 cd E-commerce-website
+````
 
-##⚙️ Step 2 — Backend Setup
+---
+
+## ⚙️ Step 2 — Backend Setup
 
 ```bash
-1️⃣ Navigate to backend folder
-
+# 1️⃣ Navigate to backend folder
 cd backend
-2️⃣ Install backend dependencies
-npm install
 
-3️⃣ Create a .env file inside the backend folder and add the following:
+# 2️⃣ Install backend dependencies
+npm install
+```
+
+### 🧩 Create Environment Variables
+
+Create a `.env` file inside the `backend` folder and add the following content:
+
+```env
 MONGO_URI=mongodb://localhost:27017/mock_cart
 PORT=5000
+```
 
-4️⃣ Seed the database with mock products
+### 🌱 Seed the Database
+
+```bash
+# 4️⃣ Seed the database with mock products
 node seed/seed.js
+```
 
-5️⃣ Start the backend server
+### 🚀 Start the Backend Server
+
+```bash
+# 5️⃣ Start the backend server
 npm run dev
-🟢 Backend will run at: http://localhost:5000
+```
 
-💻 Step 3 — Frontend Setup
+✅ **Backend will run at:** [http://localhost:5000](http://localhost:5000)
 
-1️⃣ Open a new terminal and navigate to the frontend folder
+---
+
+## 💻 Step 3 — Frontend Setup
+
+```bash
+# 1️⃣ Open a new terminal and navigate to the frontend folder
 cd ../frontend
 
-2️⃣ Install frontend dependencies
+# 2️⃣ Install frontend dependencies
 npm install
 
-3️⃣ Start the React development server
+# 3️⃣ Start the React development server
 npm start
-🟢 Frontend will run at: http://localhost:3000
+```
+
+✅ **Frontend will run at:** [http://localhost:3000](http://localhost:3000)
+
