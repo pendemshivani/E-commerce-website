@@ -69,23 +69,27 @@ Follow these steps to run the project locally 👇
 ```bash
 git clone https://github.com/pendemshivani/E-commerce-website.git
 cd E-commerce-website
-**
-### Step 2**
+⚙️ Step 2 — Backend Setup
 # Navigate to backend folder
 cd backend
 
 # Install backend dependencies
 npm install
+Create a .env file inside the backend folder and add:
 
-# Create a .env file inside the backend folder and add the following variables:
 MONGO_URI=mongodb://localhost:27017/mock_cart
 PORT=5000
+
+Then:
 
 # Seed the database with mock products
 node seed/seed.js
 
 # Start the backend server
 npm run dev
+
+
+🟢 The backend will run at http://localhost:5000
 **### Step 3**
 # Open a new terminal and navigate to the frontend folder
 cd ../frontend
